@@ -10,16 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var coolLogo: UIImageView!
+    
+    @IBOutlet var coolBg: UIImageView!
+    
+    @IBOutlet var uncoolButton: UIButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+    }// end of viewDidLoad
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    }// end of didReceiveMemoryWarning
 
 
-}
+    @IBAction func makeMeSuperCool(sender: AnyObject) {
+        
+        coolLogo.hidden = false
+        coolBg.hidden = false
+        uncoolButton.hidden = true 
+        
+    }//end of button func
+    
+    
+}// end of app
 
